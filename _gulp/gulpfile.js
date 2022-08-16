@@ -5,7 +5,7 @@ const srcBase = '../_static/src';
 const assetsBase = '../_assets';
 const publicBase = '../_assets/public';
 const distBase = '../_static/dist';
-const serverBase = '../app/public/wp/wp-content/themes/dummy'; // Local by Flywheelのテーマフォルダまでのパス。dummyの部分を任意のテーマフォルダ名に変える
+const serverBase = '../app/public/wp-content/themes/dummy'; // Local by Flywheelのテーマフォルダまでのパス。dummyの部分を任意のテーマフォルダ名に変える
 
 // 既存のファイルの読み込みパス
 const publicPath = {

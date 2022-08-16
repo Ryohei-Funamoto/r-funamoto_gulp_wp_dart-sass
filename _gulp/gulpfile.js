@@ -146,7 +146,7 @@ const cssSass = () => {
 const js = () => {
   return src(srcPath.js)
     // .pipe(dest(distPath.js)) // 吐き出し先(HTML)
-    .pipe(gulp.dest(serverDistPath.js)) // 吐き出し先(WordPress)
+    .pipe(dest(serverDistPath.js)) // 吐き出し先(WordPress)
 }
 
 /**

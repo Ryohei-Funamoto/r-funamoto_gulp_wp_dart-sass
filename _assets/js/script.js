@@ -1,13 +1,23 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function () {
-  const test = document.querySelector('.js-test');
+  /**
+   * トップへ戻るボタン
+   */
+  const toTop = document.querySelector('.js-to-top');
 
-  test.addEventListener('mouseover', function () {
-    test.style.backgroundColor = 'blue';
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      toTop.classList.add('is-show');
+    } else {
+      toTop.classList.remove('is-show');
+    }
   });
 
-  test.addEventListener('mouseleave', function () {
-    test.style.backgroundColor = 'red';
-  })
+  toTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 });

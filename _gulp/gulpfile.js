@@ -106,7 +106,7 @@ const cssSass = () => {
       cssdeclsort({ order: 'alphabetical' })
     ]))
     .pipe(gcmq()) // メディアクエリをまとめる
-    // .pipe(dest(distPath.css, { sourcemaps: './' })) // コンパイル先(HTML)
+    // .pipe(dest(distPath.css,)) // コンパイル先(HTML)
     .pipe(dest(serverDistPath.css)) // コンパイル先(WordPress)
     .pipe(browserSync.stream())
     .pipe(notify({

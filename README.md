@@ -23,4 +23,4 @@
 * 各ファイルでglobalフォルダ内の変数等を使用する場合は、@use "global" as *;の記述が必要です。※相対パスで書く必要はございません。
 * objectフォルダ内には、component, project, utilityフォルダがあります。
 * pageフォルダには、各ページ固有のCSSを定義したファイルを格納します。
-* structureフォルダには、JSライブラリのCSSを格納します。
+* structureフォルダには、JSライブラリ等のCSSを格納します。

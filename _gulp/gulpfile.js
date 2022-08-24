@@ -206,6 +206,6 @@ const watchFiles = () => {
  * parallel -> 並列で実行
  */
 module.exports = {
-  default: series(series(clean, cssSass, js, imgImagemin, html, public_file), parallel(watchFiles, browserSyncFunc)),
-  build: series(series(clean, cssSass, js, imgImagemin, html, public_file))
+  default: series(series(clean, cssSass, js, imgImagemin, public_file), parallel(watchFiles, browserSyncFunc)),
+  build: series(series(clean, cssSass, js, imgImagemin, public_file))
 };

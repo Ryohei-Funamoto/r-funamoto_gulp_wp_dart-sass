@@ -20,19 +20,17 @@ const srcPath = {
   'html': srcBase + '/**/*.html',
 };
 
-// ファイルの吐き出しパス(HTML)
+// ファイルの吐き出し先パス
 const distPath = {
   'css': distBase + '/css/',
   'js': distBase + '/js/',
   'img': distBase + '/img/',
   'html': distBase + '/',
-};
-
-// ファイルの吐き出しパス(WordPress)
-const serverDistPath = {
-  'css': serverBase + '/css/',
-  'js': serverBase + '/js/',
-  'img': serverBase + '/img/'
+  'ejs': distBase + '/',
+  'pug': distBase + '/',
+  'wpCss': serverBase + '/css/',
+  'wpJs': serverBase + '/js/',
+  'wpImg': serverBase + '/img/'
 };
 
 // 本番とテストの設定
@@ -125,7 +123,7 @@ const cssSass = () => {
     ]))
     .pipe(gulpif(thisCssGroupMediaQueries, gcmq())) // メディアクエリをまとめる
     // .pipe(dest(distPath.css, { sourcemaps: './' })) // コンパイル先(HTML)
-    .pipe(dest(serverDistPath.css, { sourcemaps: './' })) // コンパイル先(WordPress)
+    .pipe(dest(distPath.wpCss, { sourcemaps: './' })) // コンパイル先(WordPress)
     .pipe(browserSync.stream())
     .pipe(notify({
       message: 'Sassをコンパイルしました！',
@@ -139,7 +137,7 @@ const cssSass = () => {
 const js = () => {
   return src(srcPath.js)
     // .pipe(dest(distPath.js)) // 吐き出し先(HTML)
-    .pipe(dest(serverDistPath.js)) // 吐き出し先(WordPress)
+    .pipe(dest(distPath.wpJs)) // 吐き出し先(WordPress)
 };
 
 /**
@@ -167,7 +165,7 @@ const imgImagemin = () => {
       }
       ))
     // .pipe(dest(distPath.img)) // 吐き出し先(HTML)
-    .pipe(dest(serverDistPath.img)) // 吐き出し先(WordPress)
+    .pipe(dest(distPath.wpImg)) // 吐き出し先(WordPress)
 };
 
 

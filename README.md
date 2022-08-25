@@ -1,4 +1,4 @@
-# R-Funamoto_Gulp_Dart-Sass_WP
+# r-funamoto_gulp_dart-sass_wp
 
 * 当ファイルはDart Sass, WordPress対応のgulpfileです。
 

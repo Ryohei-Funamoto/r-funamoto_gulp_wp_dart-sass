@@ -1,6 +1,6 @@
-# r-funamoto_gulp_dart-sass_wp
+# r-funamoto_gulp_wp_dart-sass
 
-* 当ファイルはDart Sass, WordPress対応のgulpfileです。
+* 当ファイルはWordPress, Dart Sass対応のgulpfileです。
 
 ## 手順
 1. ターミナルを開きます。

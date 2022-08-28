@@ -1,7 +1,7 @@
 {
-  "name": "r-funamoto_gulp_dart-sass_wp",
+  "name": "r-funamoto_gulp_wp_dart-sass",
   "version": "1.0.0",
-  "description": "Dart Sass対応WordPress用gulpfile",
+  "description": "WordPress, Dart Sass対応Gulpファイル",
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development gulp",

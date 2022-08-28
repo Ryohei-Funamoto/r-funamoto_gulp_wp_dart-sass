@@ -115,7 +115,7 @@ const cssSass = () => {
     .pipe(sassGlob())
     .pipe(sass.sync({
       includePaths: ['assets/scss'],
-      outputStyle: thisCssStyle // CSSを圧縮しない
+      outputStyle: thisCssStyle
     }))
     .pipe(postcss([
       autoprefixer(),

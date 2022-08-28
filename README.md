@@ -1,16 +1,15 @@
 # r-funamoto_gulp_wp_dart-sass
-
-* 当ファイルはWordPress, Dart Sass対応のgulpfileです。
+* 当ファイルはWordPress, Dart Sass対応のGulpファイルです。
 
 ## 手順
 1. ターミナルを開きます。
 2. `npm i`コマンドを実行し、package-lock.jsonとnode_modulesを生成します。
 3. `npm run dev`コマンドで開発環境を起動します。
-* CSS非圧縮
+* CSSを圧縮しない
 * css.map作成
 * メディアクエリをまとめない
 4. `npm run prod`コマンドで本番環境用ファイルを出力します。
-* CSS非圧縮
+* CSSを圧縮しない
 * css.mapを作成しない
 * メディアクエリをまとめる
 
